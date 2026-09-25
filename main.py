@@ -7,9 +7,12 @@ load_dotenv()
 
 client = genai.Client() 
 st.set_page_config(
-    page_title="Musafir(Shreya)",
-    page_icon="✈️"
+    page_title="Travel Assistant",
+    page_icon="✈️",
+    layout="wide"
 )
+
+# st.title("🌍 Travel Assistant✈️")
 
 import streamlit as st
 
