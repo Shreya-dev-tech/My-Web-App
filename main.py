@@ -1,19 +1,19 @@
 from google import genai
 from dotenv import load_dotenv
 import time
-
+import streamlit as st
 load_dotenv()
 
-client = genai.Client() 
 st.set_page_config(
     page_title="Travel Assistant ",
     page_icon="✈️",
     layout="wide"
 )
+client = genai.Client() 
 
-import streamlit as st
+# import streamlit as st
 
-st.set_page_config(page_title="Travel Assistant", layout="wide")
+# st.set_page_config(page_title="Travel Assistant", layout="wide")
 
 BANNER_URL = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80"
 
